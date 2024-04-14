@@ -1,17 +1,13 @@
-# Nome do projeto
-Escreva um ou dois  parágrafo resumindo o objetivo do seu projeto.
+# Sistema de Locadora de Veículos
+Desenvolver um sistema de locadora de veículos utilizando C# 6.0 (ou superior), Entity Framework, SQL Express como banco de dados e Swagger para testes.
 
 ## Alunos integrantes da equipe
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
+* Anna Carla Teixeira da Silva
 
 ## Professores responsáveis
 
-* Nome completo do professor 1
-* Nome completo do professor 2
+* Leonardo Vilela Cardoso
 
 ## Instruções de utilização
 
