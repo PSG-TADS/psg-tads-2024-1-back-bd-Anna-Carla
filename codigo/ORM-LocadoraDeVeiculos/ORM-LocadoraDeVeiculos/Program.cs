@@ -38,8 +38,8 @@ namespace ORM_LocadoraDeVeiculos
         {
             [Key]
             public int Id { get; set; }
-            public string? DataRetirada { get; set; }
-            public string? DataDevolucao { get; set; }
+            public DateTime DataRetirada { get; set; }
+            public DateTime DataDevolucao { get; set; }
             public int? ClienteID { get; set; }
             [ForeignKey("ClienteID")]
             public string? Cliente { get; set;}
