@@ -1,5 +1,7 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Microsoft.EntityFrameworkCore;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Data.Common;
 
 namespace ORM_LocadoraDeVeiculos
 {
@@ -40,6 +42,20 @@ namespace ORM_LocadoraDeVeiculos
             [ForeignKey("ClienteID")]
             public string? Cliente { get; set;}
 
+        }
+
+        //Classe para contexto de conexão
+
+        public class ApplicationContext : DbContext
+        {
+            public DbSet<Cliente> Cliente { get; set;}
+            public DbSet<Veiculo> Veiculo { get; set; }
+            public DbSet<Reserva> Reserva { get; set; }
+
+            protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+            {
+                _ = optionsBuilder.UseSqlServer(@"Server=./SQLEXPRESS;Database=ORM;Trusted_Connection=True;TrustServerCertificate=true;");
+            }
         }
         static void Main(string[] args)
         {
