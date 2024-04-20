@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34714.143
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LocadoraDeVeiculosAPI", "LocadoraDeVeiculosAPI\LocadoraDeVeiculosAPI.csproj", "{7F8AD79F-2C3C-4AE9-BC12-0CD9D075701C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7F8AD79F-2C3C-4AE9-BC12-0CD9D075701C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F8AD79F-2C3C-4AE9-BC12-0CD9D075701C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F8AD79F-2C3C-4AE9-BC12-0CD9D075701C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F8AD79F-2C3C-4AE9-BC12-0CD9D075701C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {085DFC31-FDEB-4DDD-A5F5-5F6B5F867442}
+	EndGlobalSection
+EndGlobal
