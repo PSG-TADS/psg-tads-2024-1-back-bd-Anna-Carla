@@ -1,30 +1,36 @@
+using Microsoft.EntityFrameworkCore;
+using LocadoraDeVeiculosAPI.Models;
+
 namespace LocadoraDeVeiculosAPI
 {
     public class Program
     {
         public static void Main(string[] args)
         {
+
             var builder = WebApplication.CreateBuilder(args);
 
-            builder.Services.AddRazorPages();
 
+            builder.Services.AddControllers();
+            builder.Services.AddDbContext<LocadoraContext>();
             var app = builder.Build();
 
-            if (!app.Environment.IsDevelopment())
+            builder.Services.AddEndpointsApiExplorer();
+            builder.Services.AddSwaggerGen();
+
+
+            if (app.Environment.IsDevelopment())
             {
-                app.UseExceptionHandler("/Error");
-                
-                app.UseHsts();
+                app.UseSwagger();
+                app.UseSwaggerUI();
             }
 
             app.UseHttpsRedirection();
-            app.UseStaticFiles();
-
-            app.UseRouting();
 
             app.UseAuthorization();
 
-            app.MapRazorPages();
+
+            app.MapControllers();
 
             app.Run();
         }
