@@ -1,8 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using LocadoraDeVeiculosAPI.Models;
-using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 using System;
 
@@ -77,23 +75,8 @@ namespace LocadoraDeVeiculosAPI.Controllers
             _context.Cliente.Add(cliente);
             await _context.SaveChangesAsync();
 
-            for (int i = 0; i < cliente.NumeroDeReservas; i++)
-            {
-                var reserva = new Reserva
-                {
-                    ClienteID = cliente.Id,
-                    DataRetirada = DateTime.Now.AddDays(i),
-                    DataDevolucao = DateTime.Now.AddDays(i + 1)
-                };
-
-                _context.Reserva.Add(reserva);
-            }
-
-            await _context.SaveChangesAsync();
-
             return CreatedAtAction(nameof(GetCliente), new { id = cliente.Id }, cliente);
         }
-
 
         // DELETE: api/Clientes/5
         [HttpDelete("{id}")]

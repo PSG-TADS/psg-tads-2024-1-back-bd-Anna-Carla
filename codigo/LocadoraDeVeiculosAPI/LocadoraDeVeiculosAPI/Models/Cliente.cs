@@ -12,7 +12,6 @@ namespace LocadoraDeVeiculosAPI.Models
             public string? Telefone { get; set; }
             public string? Endereco { get; set; }
             public ICollection<Reserva>? Reservas { get; set; }
-        public int NumeroDeReservas { get; internal set; }
     }
     }
 
