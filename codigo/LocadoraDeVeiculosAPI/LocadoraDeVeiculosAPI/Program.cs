@@ -7,17 +7,20 @@ namespace LocadoraDeVeiculosAPI
     {
         public static void Main(string[] args)
         {
-
             var builder = WebApplication.CreateBuilder(args);
 
 
-            builder.Services.AddControllers();
-            builder.Services.AddDbContext<LocadoraContext>();
-            var app = builder.Build();
+            var connectionString = @"Server=.\SQLEXPRESS;Database=ORM;Trusted_Connection=True;TrustServerCertificate=true;";
 
+        
+            builder.Services.AddDbContext<LocadoraContext>(options =>
+                options.UseSqlServer(connectionString));
+
+            builder.Services.AddControllers();
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
 
+            var app = builder.Build();
 
             if (app.Environment.IsDevelopment())
             {
@@ -26,9 +29,7 @@ namespace LocadoraDeVeiculosAPI
             }
 
             app.UseHttpsRedirection();
-
             app.UseAuthorization();
-
 
             app.MapControllers();
 
