@@ -12,6 +12,7 @@ namespace LocadoraAPI.Models
         public string? Telefone { get; set; }
         public string? Endereco { get; set; }
         public List<Reserva>? Reservas { get; set; }
+        public object Reserva { get; internal set; }
 
         public Cliente()
         {
