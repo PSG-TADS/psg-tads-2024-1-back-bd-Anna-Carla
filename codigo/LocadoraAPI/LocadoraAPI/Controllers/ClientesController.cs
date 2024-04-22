@@ -24,7 +24,11 @@ namespace LocadoraAPI.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Cliente>>> Index()
         {
-            return await _context.Cliente.ToListAsync();
+            var clientes = await _context.Cliente
+                                        .Include(c => c.Reservas) // Inclui as reservas associadas a cada cliente
+                                        .ToListAsync();
+
+            return clientes;
         }
 
         // GET: Clientes/Details/5
@@ -53,7 +57,7 @@ namespace LocadoraAPI.Controllers
             if (ModelState.IsValid)
             {
                 // Remover qualquer referência de reserva do cliente
-                cliente.Reserva = null;
+                cliente.Reservas = new List<Reserva>();
 
                 _context.Add(cliente);
                 await _context.SaveChangesAsync();
