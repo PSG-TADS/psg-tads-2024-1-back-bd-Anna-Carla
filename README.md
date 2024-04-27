@@ -11,4 +11,7 @@ Desenvolver um sistema de locadora de veículos utilizando C# 6.0 (ou superior),
 
 ## Instruções de utilização
 
-Assim que a primeira versão do sistema estiver disponível, deverá complementar com as instruções de utilização. Descreva como instalar eventuais dependências e como executar a aplicação.
+* Clonar respositório
+* Abrir o projeto no Visual Studio Community.
+* Clicar Ctrl + F5 para inicilizar a API
+* Utilizar o Swagger para fazer as requisições.
