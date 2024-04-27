@@ -78,6 +78,8 @@ A estrutura utilizada para desenvolver o sistema segue o modelo MVC (Model, View
 
 ### Modelo Conceitual
 
+![ModeloRelacionalAtualizado](https://github.com/PSG-TADS/psg-tads-2024-1-back-bd-Anna-Carla/assets/116588995/83c11a31-2df7-4bed-b323-cb52c7c36f0a)
+
 ### Tabelas e Relacionamentos 
 
 Tabela Cliente:
@@ -104,7 +106,7 @@ Tabela Reserva:
 
 ## Registros de Testes e Resultados
 
-Imagens de teste: '/imagens'
+Imagens de teste: [Testes](images/)
 
 ## Considerações Finais
 
@@ -118,7 +120,7 @@ Acredita-se que o ensino presencial seria mais benéfico para esta disciplina, d
 
 # Referências
 
-1. Microsoft. (n.d.). Introdução ao Entity Framework Core no ASP.NET Core MVC. Recuperado de [link](https://learn.microsoft.com/pt-br/aspnet/core/data/ef-mvc/intro?view=aspnetcore-8.0)
-2. Microsoft. (n.d.). Acessar SQL: Conceitos básicos, vocabulário e sintaxe. Recuperado de [link](https://support.microsoft.com/pt-br/topic/acessar-sql-conceitos-b%C3%A1sicos-vocabul%C3%A1rio-e-sintaxe-444d0303-cde1-424e-9a74-e8dc3e460671)
-3. Universidade Federal de Santa Catarina. (n.d.). Como escrever textos em LaTeX. Recuperado de [link](https://www.inf.ufsc.br/~j.barreto/cca/tratexto/latex.htm)
-4. Endeavor Brasil. (n.d.). Como elaborar um pitch quase perfeito. Recuperado de [link](https://endeavor.org.br/dinheiro/como-elaborar-um-pitch-quase-perfeito/)
+1. Microsoft. (n.d.). Introdução ao Entity Framework Core no ASP.NET Core MVC. [link](https://learn.microsoft.com/pt-br/aspnet/core/data/ef-mvc/intro?view=aspnetcore-8.0)
+2. Microsoft. (n.d.). Acessar SQL: Conceitos básicos, vocabulário e sintaxe. [link](https://support.microsoft.com/pt-br/topic/acessar-sql-conceitos-b%C3%A1sicos-vocabul%C3%A1rio-e-sintaxe-444d0303-cde1-424e-9a74-e8dc3e460671)
+3. Universidade Federal de Santa Catarina. (n.d.). Como escrever textos em LaTeX. [link](https://www.inf.ufsc.br/~j.barreto/cca/tratexto/latex.htm)
+4. Endeavor Brasil. (n.d.). Como elaborar um pitch quase perfeito. [link](https://endeavor.org.br/dinheiro/como-elaborar-um-pitch-quase-perfeito/)
